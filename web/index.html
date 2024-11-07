@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Contact Management System</h2>
+
+    <div>
+      <input type="text" id="name" placeholder="Name" />
+      <input type="text" id="phone" placeholder="Phone" />
+      <input type="text" id="email" placeholder="E-mail" />
+      <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <div>
+      <button onclick="sortContacts()">Sort Contacts</button>
+      <button onclick="viewContacts()">Tüm Kişileri Görüntüle</button>
+    </div>
+
+    <div>
+      <input
+        type="text"
+        id="searchName"
+        placeholder="Aramak istediğiniz isim"
+      />
+      <button onclick="searchContact()">Ara</button>
+    </div>
+
+    <div id="contactList"></div>
+    <div id="searchResult"></div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>
